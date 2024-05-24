@@ -6,8 +6,26 @@ body {
   color: #2D3436;
 }
 
+.navbarsection {
+  height: fit-content;
+}
+
+.logoname {
+  width: 15%;
+  font-weight: 600;
+  font-size: 30px;
+}
+
 #dot {
   color: #FDCB6E;
+}
+
+.navbarburger {
+  border: none;
+}
+
+.gridlogo {
+  display: none;
 }
 
 .btn-regular {
@@ -29,6 +47,12 @@ body {
   background: #7564e5;
   border: 2px solid #7564e5;
   color: #fff;
+}
+
+@media (min-width: 989px) {
+  .gridlogo {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
