@@ -19,6 +19,7 @@ $font-stack: "Inter", sans-serif;
 // MOBILE FIRST RESPONSIVE
 // CSS
 body {
+    // width: 100vh;
     font-family: $font-stack;
     font-size: 14px;
     background-color: $background-color;
@@ -28,7 +29,7 @@ body {
 // HEADER
 .navContainer {
     width: 100vh;
-    height: 20%;
+    height: auto;
 }
 
 .logoname {
@@ -46,6 +47,10 @@ body {
 }
 
 .gridlogo {
+    display: none;
+}
+
+.col-6 {
     display: none;
 }
 
@@ -68,7 +73,88 @@ body {
     @include buttons;
 }
 
-// FOOTER
+// --- SECTION 3: PRICING
+.pricing h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 77.45px;
+    letter-spacing: -1px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.pricing h4 {
+    font-size: 22px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: rgba(194, 194, 194, 1);
+    padding-left: 16px;
+}
+
+// Cards
+.pricing .card {
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.colLabel {
+    width: 35%;
+}
+
+.pricing .card-title {
+    margin: 16px;
+    font-size: 26px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+}
+
+#pLabel {
+    width: 100%;
+    padding: 5px;
+    margin: 16px 8px;
+    border: 1px solid rgba(133, 133, 133, 1);
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 14.52px;
+    letter-spacing: 2.5px;
+}
+
+.pricing .card-price {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 16px;
+    color: rgba(108, 92, 231, 1);
+}
+
+.pricing .card-price .period {
+    margin: 10px 0;
+    color: rgba(108, 92, 231, 1);
+}
+
+.pricing .fa-ul {
+    margin: 32px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.pricing ul li {
+    margin: 22px;
+    list-style-type: none;
+}
+
+.pricing .btn {
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 16px;
+    transition: all 0.2s;
+}
+
+
+// ---- FOOTER
 // Form
 .femail {
     text-decoration: none;
@@ -82,8 +168,24 @@ body {
 }
 
 // Mobile Version
-.mobileFooter {
+footer .mobileFooter {
+    width: 100vh;
     display: flex;
+}
+
+.footerCopyright {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footerCompany {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 184, 148, 1);
+    margin-bottom: 20px;
 }
 
 // Desktop Version
@@ -119,33 +221,38 @@ body {
 }
 
 // Keep in touch
-.formContact{
+.formContact {
     width: 50%;
-    position:relative;
-    margin:5px;
+    position: relative;
+    margin: 5px;
 }
 
-input[type=text], input[type=email], textarea#inputmessage {
+input[type=text],
+input[type=email],
+textarea#inputmessage {
     background-color: rgba(194, 194, 194, 1);
     border: none;
     border-radius: 10px;
 }
 
-input[type=text]:focus, input[type=email]:focus, textarea#inputmessage:focus, .inputIcon:focus {
+input[type=text]:focus,
+input[type=email]:focus,
+textarea#inputmessage:focus,
+.inputIcon:focus {
     background-color: rgba(194, 194, 194, 1);
     border: 2px solid rgba(108, 92, 231, 1);
-    color:rgba(108, 92, 231, 1);
+    color: rgba(108, 92, 231, 1);
     font-size: 16px;
     font-weight: 500;
 }
 
 .inputIcon {
-    position:absolute;
-    display:inline-block;
+    position: absolute;
+    display: inline-block;
     width: 30px;
-    height:30px;
-    right:10px;
-    top:2px;
+    height: 30px;
+    right: 10px;
+    top: 2px;
 }
 
 .formBtn {
@@ -157,15 +264,63 @@ input[type=text]:focus, input[type=email]:focus, textarea#inputmessage:focus, .i
     text-align: center;
 }
 
+
 // DESKTOP VERSION
 @media (min-width: 989px) {
+
     // Header
     // Main Nav
     .gridlogo {
         display: flex;
     }
 
-    // Footer
+    .col-6 {
+        display: flex;
+    }
+
+    // --- SECTION 3: PRICING
+    .pricing h2 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 77.45px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    .pricing h4 {
+        font-size: 22px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: rgba(194, 194, 194, 1);
+    }
+
+    // Cards
+    .pricing .card:hover {
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        background-color: rgba(108, 92, 231, 1);
+        color: white;
+    }
+
+    .pricing .card:hover h5 {
+        color: rgba(85, 239, 196, 1);
+    }
+
+    .pricing .card:hover #pLabel {
+        border: 1px solid rgba(85, 239, 196, 1);
+    }
+
+    .pricing .card:hover h6,
+    .pricing .card:hover .period {
+        color: white;
+    }
+
+    .pricing .card:hover .btn {
+        color: black;
+        background-color: white;
+    }
+
+    // --- FOOTER
     .femail {
         font-size: 32px;
         font-weight: 700;
@@ -174,14 +329,15 @@ input[type=text]:focus, input[type=email]:focus, textarea#inputmessage:focus, .i
         text-align: left;
         color: rgba(108, 92, 231, 1);
     }
+
     // Desktop version
-    .desktopFooter{
+    .desktopFooter {
         display: flex;
     }
 
     // Mobile version
-    .mobileFooter{
+    .mobileFooter {
         display: none;
     }
-    
+
 }

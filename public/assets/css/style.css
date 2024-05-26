@@ -8,7 +8,7 @@ body {
 
 .navContainer {
   width: 100vh;
-  height: 20%;
+  height: auto;
 }
 
 .logoname {
@@ -26,6 +26,10 @@ body {
 }
 
 .gridlogo {
+  display: none;
+}
+
+.col-6 {
   display: none;
 }
 
@@ -51,6 +55,84 @@ body {
   font-weight: 700;
 }
 
+.pricing h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 77.45px;
+  letter-spacing: -1px;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.pricing h4 {
+  font-size: 22px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: rgb(194, 194, 194);
+  padding-left: 16px;
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.colLabel {
+  width: 35%;
+}
+
+.pricing .card-title {
+  margin: 16px;
+  font-size: 26px;
+  letter-spacing: -0.5px;
+  font-weight: bold;
+}
+
+#pLabel {
+  width: 100%;
+  padding: 5px;
+  margin: 16px 8px;
+  border: 1px solid rgb(133, 133, 133);
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 14.52px;
+  letter-spacing: 2.5px;
+}
+
+.pricing .card-price {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 16px;
+  color: rgb(108, 92, 231);
+}
+
+.pricing .card-price .period {
+  margin: 10px 0;
+  color: rgb(108, 92, 231);
+}
+
+.pricing .fa-ul {
+  margin: 32px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.pricing ul li {
+  margin: 22px;
+  list-style-type: none;
+}
+
+.pricing .btn {
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
 .femail {
   text-decoration: none;
   font-family: Inter;
@@ -62,8 +144,24 @@ body {
   color: rgb(108, 92, 231);
 }
 
-.mobileFooter {
+footer .mobileFooter {
+  width: 100vh;
   display: flex;
+}
+
+.footerCopyright {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.footerCompany {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(0, 184, 148);
+  margin-bottom: 20px;
 }
 
 .desktopFooter {
@@ -101,13 +199,18 @@ body {
   margin: 5px;
 }
 
-input[type=text], input[type=email], textarea#inputmessage {
+input[type=text],
+input[type=email],
+textarea#inputmessage {
   background-color: rgb(194, 194, 194);
   border: none;
   border-radius: 10px;
 }
 
-input[type=text]:focus, input[type=email]:focus, textarea#inputmessage:focus, .inputIcon:focus {
+input[type=text]:focus,
+input[type=email]:focus,
+textarea#inputmessage:focus,
+.inputIcon:focus {
   background-color: rgb(194, 194, 194);
   border: 2px solid rgb(108, 92, 231);
   color: rgb(108, 92, 231);
@@ -136,6 +239,42 @@ input[type=text]:focus, input[type=email]:focus, textarea#inputmessage:focus, .i
 @media (min-width: 989px) {
   .gridlogo {
     display: flex;
+  }
+  .col-6 {
+    display: flex;
+  }
+  .pricing h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 77.45px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  .pricing h4 {
+    font-size: 22px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: rgb(194, 194, 194);
+  }
+  .pricing .card:hover {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    background-color: rgb(108, 92, 231);
+    color: white;
+  }
+  .pricing .card:hover h5 {
+    color: rgb(85, 239, 196);
+  }
+  .pricing .card:hover #pLabel {
+    border: 1px solid rgb(85, 239, 196);
+  }
+  .pricing .card:hover h6,
+  .pricing .card:hover .period {
+    color: white;
+  }
+  .pricing .card:hover .btn {
+    color: black;
+    background-color: white;
   }
   .femail {
     font-size: 32px;

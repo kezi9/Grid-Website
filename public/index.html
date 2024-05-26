@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid text-center navContainer">
                 <div class="row">
-                    <div class="col-auto">
+                    <div class="col">
                         <a class="p-4 navbar-brand logoname" href="#">
                             <button class="p-4 navbar-toggler navbarburger" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <div class="col p-4 justify-content-md-end">
-                            <button class="btn btn-primary button btn-regular" type="button">Sign In</button>
+                        <button class="btn btn-primary button btn-regular" type="button">Sign In</button>
                     </div>
                 </div>
             </div>
@@ -265,73 +265,383 @@
             </div>
         </div>
         <!-- Pricing Section -->
-        <div class="container-fluid">
-            <!-- Headings -->
-            <h2>Affordable pricing</h2>
+        <section class="pricing py-5">
+            <h2>Pricing</h2>
             <h4>Bill me monthly • yearly</h4>
-            <!-- Cards -->
-            <div class="container row">
-                <!-- Pussy -->
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <div class="single_price_plan wow fadeInUp" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                        <div class="title">
-                            <p>Like a pussy</p>
-                            <div class="line"></div>
+            <div class="container">
+                <div class="row">
+                    <!-- Individual -->
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <!-- Card Title -->
+                                <div class="row">
+                                    <div class="col-auto me-auto">
+                                        <h5 class="card-title">Individual</h5>
+                                    </div>
+                                    <div class="col-auto colLabel">
+                                        <h5 class="card-title text-uppercase text-center" id="pLabel">Fine!</h5>
+                                    </div>
+                                </div>
+                                <h6 class="card-price">$8.99<span class="period minicaps">/MONTH</span></h6>
+                                <!-- Card Features -->
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Unlimited hosting
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Free storage
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Lifetime support
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Constant updates
+                                    </li>
+                                </ul>
+                                <div class="d-grid">
+                                    <a href="#" class="btn btn-primary">Get started!</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="price">
-                            <h3>Free/forever</h3>
+                    </div>
+                    <!-- Professional -->
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <!-- Card Title -->
+                                <div class="row">
+                                    <div class="col-auto me-auto">
+                                        <h5 class="card-title">Professional</h5>
+                                    </div>
+                                    <div class="col-auto colLabel">
+                                        <h5 class="card-title text-uppercase text-center" id="pLabel">Good!</h5>
+                                    </div>
+                                </div>
+                                <h6 class="card-price">$12.99<span class="period minicaps">/MONTH</span></h6>
+                                <!-- Card Features -->
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Unlimited hosting
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Free storage
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Lifetime support
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Constant updates
+                                    </li>
+                                </ul>
+                                <div class="d-grid">
+                                    <a href="#" class="btn btn-primary">Select this plan!</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="description">
-                            <p><i class="lni lni-checkmark-circle"></i>Components-driven system</p>
-                            <p><i class="lni lni-checkmark-circle"></i> Sales-boosting landing pages</p>
-                            <p><i class="lni lni-close"></i>Awesome Feather icons pack</p>
+                    </div>
+                    <!-- Enterprise -->
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Card Title -->
+                                <div class="row">
+                                    <div class="col-auto me-auto">
+                                        <h5 class="card-title">Enterprise</h5>
+                                    </div>
+                                    <div class="col-auto colLabel">
+                                        <h5 class="card-title text-uppercase text-center" id="pLabel">Wow!</h5>
+                                    </div>
+                                </div>
+                                <h6 class="card-price">$32.99<span class="period minicaps">/MONTH</span></h6>
+                                <!-- Card Features -->
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Unlimited hosting
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Free storage
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Lifetime support
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_19357_211)">
+                                                    <rect width="24" height="24" rx="12" fill="#FDCB6E" />
+                                                </g>
+                                                <path d="M15.36 9.47998L10.74 14.1L8.64001 12" stroke="#2D3436"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <filter id="filter0_b_19357_211" x="-48" y="-48" width="120"
+                                                        height="120" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="24" />
+                                                        <feComposite in2="SourceAlpha" operator="in"
+                                                            result="effect1_backgroundBlur_19357_211" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_backgroundBlur_19357_211" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Constant updates
+                                    </li>
+                                </ul>
+                                <div class="d-grid">
+                                    <a href="#" class="btn btn-primary">Start today!</a>
+                                </div>
+                            </div>
                         </div>
-                        <a href="#" class="btn btn-lg btn-price-bg">Try for free</a>
                     </div>
                 </div>
-                <!-- Individual -->
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <div class="single_price_plan active wow fadeInUp" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                        <div class="title">
-                            <p>👤 Individual</p>
-                            <span>Best!</span>
-                            <div class="line"></div>
-                        </div>
-                        <div class="price">
-                            <h3>$24/month</h3>
-                        </div>
-                        <div class="description">
-                            <p><i class="lni lni-checkmark-circle"></i>Components-driven system</p>
-                            <p><i class="lni lni-checkmark-circle"></i> Sales-boosting landing pages</p>
-                            <p><i class="lni lni-checkmark-circle"></i>Awesome Feather icons pack</p>
-                            <p><i class="lni lni-checkmark-circle"></i> Themed into 3 different styles</p>
-                            <p><i class="lni lni-close"></i>Will help to learn Figma</p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-price-bg .btn-price-active">Regular license</a>
-                    </div>
-                </div>
-                <!-- Corporate-->
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <div class="single_price_plan wow fadeInUp" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                        <div class="title">
-                            <p>👥 Corporate</p>
-                            <div class="line"></div>
-                        </div>
-                        <div class="price">
-                            <h3>$12/editor</h3>
-                        </div>
-                        <div class="description">
-                            <p><i class="lni lni-checkmark-circle"></i>Components-driven system</p>
-                            <p><i class="lni lni-checkmark-circle"></i>Sales-boosting landing pages</p>
-                            <p><i class="lni lni-checkmark-circle"></i>Awesome Feather icons pack</p>
-                            <p><i class="lni lni-checkmark-circle"></i>Unlimited Themed into 3 different styles</p>
-                        </div>
-                        <a href="#" class="btn btn-lg btn-price-bg">Extended license</a>
-                    </div>
-                </div>
+            </div>
+        </section>
     </body>
     <!-- Footer Page -->
     <!-- Desktop Version -->
@@ -508,18 +818,22 @@
         </div>
     </footer>
     <!-- Mobile Responsive Footer -->
-    <footer class="py-5 mobileFooter">
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top ">
+    <footer class="mobileFooter text-center">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <!-- Footer Text -->
             <!-- Copyright -->
-            <p class="fcopyright">Company © 2018 • Your Company</p>
-            <p class="fcopyright">All rights reserved</p>
+            <div class="footerCopyright">
+                <p>Company © 2018 • Your Company</p>
+                <p>All rights reserved</p>
+            </div>
             <!-- Company Info -->
-            <p class="companyline"> Made in Setproduct.com</p>
-            <p class="companyline"> One man digital agency</p>
-            <a class="femail" href="#email">hello@setproduct.com</a>
+            <div class="footerCompany">
+                <p> Made in Setproduct.com</p>
+                <p> One man digital agency</p>
+                <a class="femail" href="#email">hello@setproduct.com</a>
+            </div>
             <!-- Social Media -->
-            <ul class="list-unstyled d-flex">
+            <ul class="list-unstyled d-flex justify-content-center">
                 <!-- Facebook -->
                 <li class="ms-3">
                     <a class="link-body-emphasis" href="#">
