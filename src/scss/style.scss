@@ -7,6 +7,15 @@ $primary-color: #2D3436;
 // TEXT
 $font-stack: "Inter", sans-serif;
 
+// MIXINS
+// Buttons
+@mixin buttons {
+    background: #7564e5;
+    border: 2px solid #7564e5;
+    color: #fff;
+    font-weight: 700;
+}
+
 // MOBILE FIRST RESPONSIVE
 // CSS
 body {
@@ -17,8 +26,9 @@ body {
 }
 
 // HEADER
-.navbarsection {
-    height: fit-content;
+.navContainer {
+    width: 100vh;
+    height: 20%;
 }
 
 .logoname {
@@ -54,15 +64,124 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.btn-price-bg {
-    background: #7564e5;
-    border: 2px solid #7564e5;
-    color: #fff;
+.btn {
+    @include buttons;
+}
+
+// FOOTER
+// Form
+.femail {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: rgba(108, 92, 231, 1);
+}
+
+// Mobile Version
+.mobileFooter {
+    display: flex;
+}
+
+// Desktop Version
+.desktopFooter {
+    display: none;
+    text-align: left;
+}
+
+.footerSections {
+    margin: 10px;
+}
+
+.minicaps {
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 14.52px;
+    letter-spacing: 2.5px;
+    color: rgba(173, 173, 173, 1);
+    margin-bottom: 10px;
+}
+
+// Social media
+.desktopSocmed {
+    text-align: left;
+}
+
+// Information
+.navFooter {
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    height: 40%;
+}
+
+// Keep in touch
+.formContact{
+    width: 50%;
+    position:relative;
+    margin:5px;
+}
+
+input[type=text], input[type=email], textarea#inputmessage {
+    background-color: rgba(194, 194, 194, 1);
+    border: none;
+    border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea#inputmessage:focus, .inputIcon:focus {
+    background-color: rgba(194, 194, 194, 1);
+    border: 2px solid rgba(108, 92, 231, 1);
+    color:rgba(108, 92, 231, 1);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inputIcon {
+    position:absolute;
+    display:inline-block;
+    width: 30px;
+    height:30px;
+    right:10px;
+    top:2px;
+}
+
+.formBtn {
+    width: 170px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.25px;
+    text-align: center;
 }
 
 // DESKTOP VERSION
 @media (min-width: 989px) {
+    // Header
+    // Main Nav
     .gridlogo {
-        display: block;
+        display: flex;
     }
+
+    // Footer
+    .femail {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        text-align: left;
+        color: rgba(108, 92, 231, 1);
+    }
+    // Desktop version
+    .desktopFooter{
+        display: flex;
+    }
+
+    // Mobile version
+    .mobileFooter{
+        display: none;
+    }
+    
 }
