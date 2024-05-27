@@ -28,7 +28,7 @@ body {
 
 // HEADER
 .navContainer {
-    width: 100vh;
+    width: 100%;
     height: auto;
 }
 
@@ -40,6 +40,7 @@ body {
 
 #dot {
     color: #FDCB6E;
+    margin: 5px 0;
 }
 
 .navbarburger {
@@ -50,7 +51,7 @@ body {
     display: none;
 }
 
-.col-6 {
+.navbar .col-8 {
     display: none;
 }
 
@@ -73,10 +74,57 @@ body {
     @include buttons;
 }
 
+// --- SECTION 2 : DELIVERING
+.delivering h4 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #7564e5;
+    padding-left: 16px;
+    margin-bottom: 20px;
+}
+
+.delivering .delivHeadings {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.delivering .delivHeadings p {
+    padding-left: 16px;
+}
+
+.delivering .card {
+    width: 200px;
+    padding: 16px;
+    border: none;
+}
+
+.delivering svg {
+    padding-left: 16px;
+}
+
+.delivering .card-paragraph {
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(92, 92, 92, 1);
+}
+
+.delivering .btn {
+    background-color: #fff;
+    color: #7564e5;
+    border: 0.75px solid rgba(173, 173, 173, 1);
+    border-radius: 12px;
+}
+
 // --- SECTION 3: PRICING
-.pricing h2 {
-    font-size: 40px;
-    font-weight: 800;
+.pricing h2,
+.delivering h2 {
+    font-size: 32px;
+    font-weight: 700;
     line-height: 77.45px;
     letter-spacing: -1px;
     text-align: left;
@@ -274,8 +322,15 @@ textarea#inputmessage:focus,
         display: flex;
     }
 
-    .col-6 {
+    .navbar .col-8 {
         display: flex;
+    }
+
+    // --- SECTION 2: DELIVERING
+    .delivering .card {
+        width: 300px;
+        padding: 16px;
+        border: none;
     }
 
     // --- SECTION 3: PRICING
