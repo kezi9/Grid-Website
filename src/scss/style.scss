@@ -27,18 +27,18 @@ body {
 }
 
 // HEADER
-.navContainer {
+.navbar .navContainer {
     width: 100%;
-    height: auto;
+    height: 100px;
 }
 
 .logoname {
-    width: 15%;
+    width: 20%;
     font-weight: 600;
     font-size: 30px;
 }
 
-#dot {
+.dot {
     color: #FDCB6E;
     margin: 5px 0;
 }
@@ -47,7 +47,7 @@ body {
     border: none;
 }
 
-.gridlogo {
+.navbar .gridlogo {
     display: none;
 }
 
@@ -318,8 +318,9 @@ textarea#inputmessage:focus,
 
     // Header
     // Main Nav
-    .gridlogo {
-        display: flex;
+    .navbar .gridlogo {
+        display: inline;
+        vertical-align: middle;
     }
 
     .navbar .col-8 {
